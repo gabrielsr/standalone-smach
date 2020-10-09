@@ -17,13 +17,13 @@ before_install:
 install:
 - pipenv install --dev
 script:
-- pytest -v --cov=gmrs .
+- pytest -v .
 after_success:
 - pyenv shell
 - codecov
 - pip install codacy-coverage
 - python-codacy-coverage -r coverage.xml
-- py.test --cov-report=xml --cov=gmrs tests/
+- py.test --cov-report=xml --cov=smach tests/
 - bash <(curl -s https://codecov.io/bash)
 deploy:
   provider: pypi

@@ -4,6 +4,16 @@ url = "https://pypi.org/simple"
 verify_ssl = true
 
 [dev-packages]
+pytest = "*"
+pytest-cov = "*"
+flake8 = "*"
+autopep8 = "*"
+codacy-coverage = "*"
+pytest-mock = "*"
+setuptools = "*"
+wheel = "*"
+setuptools-scm = "*"
+
 
 [packages]
 
