@@ -1,6 +1,6 @@
 #!/usr/bin/env python
 
-from setuptools import setup, find_namespace_packages
+from setuptools import setup, find_packages
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
@@ -15,7 +15,7 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/gabrielsr/standalone-smach",
-    packages=find_namespace_packages(include=['src.*']),
+    packages=find_packages(include=['smach']),
     classifiers=[
         "Programming Language :: Python :: 3",
         "License :: OSI Approved :: MIT License",
